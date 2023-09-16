@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
-
 import org.sid.entities.FormationEntity;
 import org.springframework.util.CollectionUtils;
 
@@ -50,6 +47,10 @@ public class FormationDto {
 	public static FormationDto entityToDto(FormationEntity formationEntity) {
 		FormationDto formationDto = new FormationDto();
 		if (formationEntity != null) {
+			
+			
+			
+			
 			formationDto.setIdFormation(formationEntity.getIdFormation());
 			formationDto.setTitreFormation(formationEntity.getTitreFormation());
 			formationDto.setDescription(formationEntity.getDescription());
